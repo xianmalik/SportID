@@ -1,7 +1,16 @@
 /*RESPONSIVE*/
-@media all and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     section#Landing h1 {
-        font-size: 150% !important;
+        max-width: 100%;
+        font-size: 180%;
+    }
+    section#Subscribe h1 { font-size: 26px; }
+    p { font-size: 14px; }
+    section#Subscribe input[type="email"] { min-width: auto; }
+    section#Subscribe input[type="submit"],
+    section#Subscribe input[type="submit"]:hover,
+    section#Subscribe input[type="submit"]:focus {
+        width: auto;
     }
     section {
         position: relative !important;
