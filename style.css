@@ -34,7 +34,7 @@ body {
 }
 ::-webkit-scrollbar {
 }
-p { font-size: 16px; margin-bottom: 1em; }
+p { font-size: 18px; margin-bottom: 1em; }
 #header {
     position: absolute;
     top: 0;
@@ -74,6 +74,9 @@ p { font-size: 16px; margin-bottom: 1em; }
 }
 #tournamentID #main-wrapper {
     background-image: url("img/tournamentid-bg.jpg");
+}
+#teamID #main-wrapper {
+    background-image: url("img/teamid-bg.jpg");
 }
 #main-wrapper {
     background-size: cover;
@@ -218,7 +221,7 @@ section#Subscribe input[type="submit"]:focus {
     display: inline-block;
     padding: 0 .5em 0 0;
 }
-@media screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
     section#Landing h1 {
         max-width: 100%;
         font-size: 180%;
@@ -233,5 +236,12 @@ section#Subscribe input[type="submit"]:focus {
     }
     section {
         position: relative !important;
+        transform: none !important;
+    }
+    .navbar-default .navbar-toggle {
+        display: none;
+    }
+    .navbar-default .navbar-brand {
+        width: 100%;
     }
 }
