@@ -1,5 +1,5 @@
 /*RESPONSIVE*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
     section#Landing h1 {
         max-width: 100%;
         font-size: 180%;
