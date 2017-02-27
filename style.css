@@ -1,21 +1,3 @@
-/*RESPONSIVE*/
-@media only screen and (max-width: 767px) {
-    section#Landing h1 {
-        max-width: 100%;
-        font-size: 180%;
-    }
-    section#Subscribe h1 { font-size: 26px; }
-    p { font-size: 14px; }
-    section#Subscribe input[type="email"] { min-width: auto; }
-    section#Subscribe input[type="submit"],
-    section#Subscribe input[type="submit"]:hover,
-    section#Subscribe input[type="submit"]:focus {
-        width: auto;
-    }
-    section {
-        position: relative !important;
-    }
-}
 /*FONTS*/
 @font-face {
     font-family: 'Futura Maxi STD';
@@ -235,4 +217,23 @@ section#Subscribe input[type="submit"]:focus {
 .social-icons li {
     display: inline-block;
     padding: 0 .5em 0 0;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 767px) {
+    section#Landing h1 {
+        max-width: 100%;
+        font-size: 180%;
+    }
+    section#Subscribe h1 { font-size: 26px; }
+    p { font-size: 14px; }
+    section#Subscribe input[type="email"] { min-width: auto; }
+    section#Subscribe input[type="submit"],
+    section#Subscribe input[type="submit"]:hover,
+    section#Subscribe input[type="submit"]:focus {
+        width: auto;
+    }
+    section {
+        position: relative !important;
+    }
 }
