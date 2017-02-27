@@ -1,5 +1,41 @@
+/*RESPONSIVE*/
+@media all and (max-width: 480px) {
+    section#Landing h1 {
+        font-size: 150% !important;
+    }
+    section {
+        position: relative !important;
+    }
+}
+/*FONTS*/
+@font-face {
+    font-family: 'Futura Maxi STD';
+    src: url('fonts/FuturaMaxiStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura Maxi STD';
+    src: url('fonts/FuturaMaxiStd-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura Maxi STD';
+    src: url('fonts/FuturaMaxiStd-Demi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura Maxi STD';
+    src: url('fonts/FuturaMaxiStd-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/*NORMAL CSS*/
 body {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Futura Maxi STD';
     color: #201b18;
 }
 .container {
@@ -36,8 +72,19 @@ p { font-size: 16px; margin-bottom: 1em; }
 .nav.navbar-nav li:last-child a {
     padding-right: 0;
 }
+#campID #main-wrapper {
+    background-image: url("img/campid-bg.jpg");
+}
+#coachID #main-wrapper {
+    background-image: url("img/coachid-bg.jpg");
+}
+#sportsID #main-wrapper {
+    background-image: url("img/sportsid-bg.jpg");
+}
+#tournamentID #main-wrapper {
+    background-image: url("img/tournamentid-bg.jpg");
+}
 #main-wrapper {
-    background-image: url("img/bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,6 +135,7 @@ section#Landing h1 {
 }
 
 section#Subscribe {
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5) 30%, rgba(255, 255, 255, .8));
     background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5) 30%, rgba(255, 255, 255, .8));
 }
 section#Subscribe h1 {
@@ -100,18 +148,26 @@ section#Subscribe h4 {
     font-weight: 900;
     margin: 1.5em 0 .8em 0;
 }
+section#Subscribe form {
+    padding: 0 !important;
+}
 section#Subscribe input {
+    display: inline-block !important;
     background: transparent;
-    border: 1px solid #201b18;
-    padding: .8em 1.5em;
+    border: 1px solid #201b18 !important;
+    padding: .8em 1.5em !important;
+    border-radius: 0 !important;
     color: #201b18;
-    margin-right: .5em;
-    margin-bottom: 1.5em;
+    margin: 0 0.5em 1.5em 0 !important;
+    height: auto !important;
+    line-height: 24px !important;
 }
 section#Subscribe input[type="email"] {
     min-width: 250px;
 }
-section#Subscribe input[type="submit"] {
+section#Subscribe input[type="submit"],
+section#Subscribe input[type="submit"]:hover,
+section#Subscribe input[type="submit"]:focus {
     background: #201b18;
     color: #FFF;
 }
