@@ -218,8 +218,6 @@ section#Subscribe input[type="submit"]:focus {
     display: inline-block;
     padding: 0 .5em 0 0;
 }
-
-/*RESPONSIVE*/
 @media screen and (max-width: 767px) {
     section#Landing h1 {
         max-width: 100%;
